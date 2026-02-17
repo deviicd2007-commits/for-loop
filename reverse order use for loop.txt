@@ -1,0 +1,11 @@
+# include<stdio.h>
+int main(){
+    int a,rev=0,rem;
+    scanf("%d",&a);
+    for(a!=0;a=a/10;){
+        rem=a%10;
+        rev=rev*10+rem;
+    }
+    printf("%d",rev);
+    return 0;
+}
