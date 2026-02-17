@@ -1,0 +1,9 @@
+# include<stdio.h>
+int main(){
+    int base=2,power=3,result=1,i;
+    for(i=1;i<=power;i++){
+        result*=base;
+    }
+    printf("Print the result:%d",result);
+    return 0;
+}
