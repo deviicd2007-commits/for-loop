@@ -1,0 +1,12 @@
+# include<stdio.h>
+int main(){
+    int a,i,count=0;
+    scanf("%d",&a);
+    for(i=2;i<=a;i++){
+        if(i%2==0){
+            count++;
+        }
+    }
+    printf("Print the count: %d",count);
+    return 0;
+}
