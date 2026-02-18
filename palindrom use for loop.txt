@@ -1,0 +1,16 @@
+#  include<stdio.h>
+int main(){
+    int n,i,rev=0,temp=n,digit;
+    scanf("%d",&n);
+    for(i=n;i>0;i/10){
+        digit=i%10;
+        rev=rev*10+digit;
+    }
+    if(rev==temp){
+        printf("Palindrome Number");
+    }
+    else{
+        printf("Not a Palindrome Number");
+    }
+    return 0;
+}
