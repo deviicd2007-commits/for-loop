@@ -1,0 +1,13 @@
+# include<stdio.h>
+int main(){
+    int salary,absentDays;
+    int finalSalary;
+    scanf("%d ",&salary);
+    scanf("%d",&absentDays);
+    finalSalary=salary-(absentDays*100);
+    if(finalSalary<0){
+        finalSalary=0;
+    }
+    printf("Final Salary :%d",finalSalary);
+    return 0;
+}
