@@ -1,0 +1,10 @@
+# include<stdio.h>
+int main(){
+    int n,i,ticket,total=0;
+    scanf("%d %d",&n,&ticket);
+    for(i=0;i<n;i++){
+        total+=ticket;
+    }
+    printf("Total Collection :$%d",total);
+    return 0;
+}
