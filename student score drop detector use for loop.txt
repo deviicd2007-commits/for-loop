@@ -1,0 +1,17 @@
+# include<stdio.h>
+int main(){
+    int n,i,marks,total=0,failedsubjects=0;
+    float average;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&marks);
+       total+=marks ;
+       if(marks<40){
+          failedsubjects ++;
+       }
+    }
+    average =total/n;
+    printf("Average Score:%.0f\n",average);
+    printf("Failed Subjects:%d",failedsubjects);
+    return 0;
+}
