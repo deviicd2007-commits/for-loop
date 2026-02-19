@@ -1,0 +1,15 @@
+# include<stdio.h>
+int main(){
+    int n,i,delay,totaldelay=0,delayedcount=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&delay);
+        totaldelay+=delay;
+        if(delay>30){
+            delayedcount++;
+        }
+    }
+    printf("Total Delay:%d/n",totaldelay);
+    printf("Delay Deliveries:%d",delayedcount);
+    return 0;
+}
