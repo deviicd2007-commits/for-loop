@@ -1,0 +1,17 @@
+# include<stdio.h>
+int main(){
+    int n,i,hours,totalhours=0,heavydays=0,overtimecost;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&hours);
+        totalhours+=hours;
+        if(hours>3){
+            heavydays++;
+        }
+    }
+    overtimecost=totalhours*200;
+    printf("Total Overtime Hours:%d\n",totalhours);
+    printf("Overtime Cost:%d\n",overtimecost);
+    printf("Heavy Overtime Days:%d",heavydays);
+    return 0;
+}
