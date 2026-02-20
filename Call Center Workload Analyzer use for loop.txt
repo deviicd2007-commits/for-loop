@@ -1,0 +1,15 @@
+# include<stdio.h>
+int main(){
+    int n,i,hours,totalcalls=0,overloadedhours=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&hours);
+       totalcalls+=hours;
+       if(hours>40){
+          overloadedhours++;
+       }
+    }
+    printf("Total Calls:%d\n",totalcalls);
+    printf("Overloaded Hours:%d",overloadedhours);
+    return 0;
+}
