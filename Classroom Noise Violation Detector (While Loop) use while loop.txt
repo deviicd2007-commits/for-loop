@@ -1,0 +1,22 @@
+# include<stdio.h>
+int main(){
+    int n,i=0,noise,violations=0,currentstreak=0,longestStreak=0;
+    scanf("%d",&n);
+    while(i<n){
+        scanf("%d",&noise);
+        if(noise>70){
+            violations++;
+            currentstreak++;
+            if(currentstreak>longestStreak){
+                longestStreak=currentstreak;
+            }
+        }
+        else{
+            currentstreak=0;
+        }
+        i++;
+    }
+    printf("Noise Violations:%d\n",violations);
+    printf("Longest Violation Streak:%d",longestStreak);
+    return 0;
+}
