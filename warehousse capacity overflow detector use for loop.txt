@@ -1,0 +1,15 @@
+# include<stdio.h>
+int main(){
+    int capacity,n,i,items,overflowDays=0;
+    scanf("%d %d",&capacity,&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&items);
+        capacity-=items;
+       if(capacity<0){
+           overflowDays++;
+       }
+    }
+    printf("Remaining Capacity:%d\n",capacity);
+    printf("Overflow Days:%d",overflowDays);
+    return 0;
+}
