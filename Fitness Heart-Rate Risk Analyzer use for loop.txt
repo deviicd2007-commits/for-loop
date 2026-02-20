@@ -1,0 +1,15 @@
+# include<stdio.h>
+int main(){
+    int n,i,values,maxheartrate=0,dangerReading=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&values);
+       maxheartrate+=values;
+       if(values>140){
+          dangerReading++;
+       }
+    }
+    printf("Max Heart Rate:%d\n",maxheartrate);
+    printf("Danger Reading:%d",dangerReading);
+    return 0;
+}
