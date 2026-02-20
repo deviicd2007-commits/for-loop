@@ -1,0 +1,16 @@
+# include<stdio.h>
+int main(){
+    int n,i=0,balance,transaction,lowDays=0;
+    scanf("%d %d",&n,&balance);
+    while(i<n){
+        scanf("%d",&transaction);
+         balance=balance+transaction;
+         if(balance<2000){
+             lowDays++;
+         }
+         i++;
+    }
+     printf("Final Balance: %d\n", balance);
+    printf("Low Balance Days: %d", lowDays);
+    return 0;
+}
