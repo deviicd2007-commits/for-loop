@@ -1,0 +1,15 @@
+# include<stdio.h>
+int main(){
+    int n,i,scores,totalRisk=0,highRiskSessions=0;
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&scores);
+       totalRisk+=scores;
+       if(scores<50){
+          highRiskSessions++;
+       }
+    }
+    printf("Total Risk:%d\n",totalRisk);
+    printf("High Risk Sessions:%d",highRiskSessions);
+    return 0;
+}
