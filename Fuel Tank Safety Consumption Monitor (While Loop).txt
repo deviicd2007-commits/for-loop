@@ -1,0 +1,19 @@
+# include<stdio.h>
+int main(){
+    int fuel,n,i=0,consumption,completedTrips=0;
+    scanf("%d",&fuel);
+    scanf("%d",&n);
+    while(i<n){
+        scanf("%d",&consumption);
+        if(fuel>=consumption){
+            fuel=fuel-consumption;
+            completedTrips++;
+        }else{
+            break;
+        }
+        i++;
+    }
+    printf("Completed Trips:%d\n",completedTrips);
+    printf("Remaining Fuel:%d\n",fuel);
+    return 0;
+}
