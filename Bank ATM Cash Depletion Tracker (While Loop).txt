@@ -1,0 +1,19 @@
+# include<stdio.h>
+int main(){
+    int ATMcash,n,withdrawal,i=0,successful=0;
+    scanf("%d",&ATMcash);
+    scanf("%d",&n);
+    while(i<n){
+        scanf("%d",&withdrawal);
+        if(ATMcash>=withdrawal){
+        ATMcash-=withdrawal;
+        successful++;
+    }else{
+        break;
+    }
+    i++;
+    }
+    printf("Successful withdrawal:%d\n",successful);
+    printf("Remining Cash:%d",ATMcash);
+    return 0;
+}
