@@ -1,0 +1,23 @@
+# include<stdio.h>
+int main(){
+    int maxWeight,n,weight,i=0,totalWeight=0,pepoleEntered=0,overload=0;
+    scanf("%d",&maxWeight);
+    scanf("%d",&n);
+    while(i<n){
+        scanf("%d",&weight);
+        if(totalWeight+weight<=maxWeight){
+            totalWeight+=weight;
+            pepoleEntered++;
+        }else{
+            overload=1;
+            break;
+        }
+        i++;
+    }
+    printf("Pepole Entered: %d\n",pepoleEntered);
+    if(overload==1){
+        printf("Overload Status: Yes");
+    }else{
+        printf("Overload Status: No");
+    }return 0;
+}
